@@ -1,0 +1,353 @@
+/*中间分类模块开始*/
+.grid {
+	height: 480px;
+}
+.grid-col1 {
+	width: 190px;
+	height: 100%;
+	background-color: #6e6568;
+	color: #fff;
+	font-size: 16px; /*给/，不是给字*/
+	position: relative;
+}
+.ad {
+	width: 250px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+.ad-r {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	width: 0;
+	height: 480px;
+	background: url(../images/ad-r.jpg);
+	/*过渡*/
+	transition: all 0.8s;
+}
+.ad:hover .ad-r {
+	/*鼠标经过 ad 大盒子的时候，里面的的图片宽度变成990*/
+	width: 990px;
+}
+.grid-col1 a {
+	color: #fff;
+	font-size: 16px; /*给字的样式*/
+	margin: 0 3px;
+}
+.grid-col1 ul {
+	padding: 10px 0;
+}
+.grid-col1 ul li {
+	padding-left: 12px;
+	height: 29px;
+	line-height: 26px;
+	/*margin-left: 12px;*/
+}
+.grid-col1 ul li:hover {
+	background-color: #9c9698;
+}
+.grid-col2 {
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+}
+/*banner部分*/
+.grid-col2-b div{
+	float: left;
+	margin-top: 10px;
+}
+.grid-col2-b div:last-child{
+	float: right;
+	margin-top: 10px;
+}
+/*箭头部分*/
+.grid-col2-t {
+	position: relative;
+}
+.screen {
+	width: 790px;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+}
+
+.screen li {
+	width: 790px;
+	height: 340px;
+	overflow: hidden;
+	float: left;
+}
+
+.screen ul {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 3160px;
+}
+.all ol {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.all ol li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.all ol li.current {
+	background: yellow;
+}
+
+/*.arrow-l,
+.arrow-r {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	background: rgba(0,0,0,0.3);
+	transform: translateY(-50%);
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	color: rgba(255,255,255,0.6);
+	font-family: arial;
+	font-weight: normal;
+}
+.arrow-r {
+	right: 0;
+	}*/
+
+	#arr {
+		display: block;
+		z-index: 1000;
+	}
+
+	#arr span {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		left: 5px;
+		top: 50%;
+		margin-top: -20px;
+		background: #000;
+		cursor: pointer;
+		line-height: 40px;
+		text-align: center;
+		font-weight: bold;
+		font-family: '黑体';
+		font-size: 30px;
+		color: #fff;
+		opacity: 0.3;
+		border: 1px solid #fff;
+	}
+
+	#arr #right {
+		right: 5px;
+		left: auto;
+	}
+	.circle {
+		width: 165px;
+		height: 20px;
+		background-color: rgba(255,255,255,0.3);
+		position: absolute;
+		left: 50%;
+		bottom: 20px;   
+		border-radius: 10px;
+		padding-left: 6px;
+		transform: translateX(-50%);
+		list-style:none;
+	}
+	.circle li {
+		width: 12px;
+		height: 12px;
+		background-color: #fff;
+		border-radius: 50%;
+		float: left; 
+		margin: 4px;
+		cursor: pointer; /*鼠标经过li的时候变成小手*/
+	}
+	.circle .current {
+		background-color: #f10215;
+	}
+	.grid-col3 {
+		width: 190px;
+		height: 100%;
+	}
+	/*右边模块*/
+	.login {
+		height: 85px;
+		border-bottom: 1px solid #ccc;
+		padding: 15px;
+		background-color: #fff;
+	}
+	.login-t {
+		width: 95px;
+		height: 60px;
+		line-height: 20px;
+		font-size: 12px;
+		white-space: nowrap; /*强制一行内显示*/
+		overflow: hidden; /*溢出隐藏*/
+		text-overflow:  ellipsis; /*超出部分显示省略号*/
+		color: #666;
+		padding-left: 60px; /*这里给padding 把文字挤过来 */
+		position: relative;
+	}
+	.login-t a {
+		color: #666;
+	}
+	.login-t a:hover{
+		color: #f10215;
+	}
+	.login-b a {
+		display: inline-block;
+		width: 70px;
+		height: 20px;
+		line-height: 20px;
+		border: 2px solid #f10215;
+		margin-right: 3px;
+		text-align: center;
+		color: #f10215;
+	}
+	.login-b a:hover {
+		background-color: #f10215;
+		color: #fff;
+	}
+	.user-info {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url(../images/sprite_userinfo@1x.png) no-repeat -70px 0;
+	/*border-radius: 50%;
+	overflow: hidden;*/
+}
+.user-info img {
+	width: 40px;
+	border-radius: 50%;
+	margin: 5px;
+}
+.news {
+	height: 155px;
+	border-bottom: 1px solid #ccc;
+	padding: 7px 13px 0px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.new-t {
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.new-t a {
+	float: left;
+	height: 17px;
+	line-height: 17px;
+}
+.cuxiao {
+	width: 38px;
+	border-right: 1px solid #ccc;
+}
+.gg {
+	margin-left:15px;
+}
+.new-t .more {
+	float: right;
+}
+.new-t div {
+	height: 2px;
+	width: 28px;
+	background-color: #f10215;
+	position: absolute;
+	bottom: -1px;
+	left: 0
+}
+.new-b {
+	padding-top: 15px;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.new-b li {
+	height: 23px;
+	line-height: 23px
+}
+.expand {
+	height: 208px;
+	border-bottom: 1px solid #fff;
+	overflow: hidden;
+	background-color: #fff;
+}
+.expand ul {
+	width: 195px; /*父亲是190 但是里面的li 宽度超过了190 摆放不开4个li*/
+}
+.expand li {
+	width: 47px;
+	height: 29px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+	font-size: 12px;
+	color: #ccc;
+	text-align: center;
+	padding-top: 40px;
+	position: relative;
+}
+.expand li a {
+	position: absolute;
+	top: 15px;
+	left: 13px;
+	width: 25px;
+	height: 25px;
+	background: url(../images/sprite_fs@1x.png) no-repeat;
+}
+.expand li:nth-child(2) a {
+	background-position: -40px 1px;
+}
+.expand li:nth-child(3) a {
+	background-position: -88px 1px;
+}
+.expand li:nth-child(4) a {
+	background-position: -135px 1px;
+}
+.expand li:nth-child(5) a {
+	background-position: 0 -46px;
+}
+.expand li:nth-child(6) a {
+	background-position: -44px -46px;
+}
+.expand li:nth-child(7) a {
+	background-position: -89px -46px;
+}
+.expand li:nth-child(8) a {
+	background-position: -136px -45px;
+}
+.expand li:nth-child(9) a {
+	background-position: 0 -89px;
+}
+.expand li:nth-child(10) a {
+	background-position: -44px -89px;
+}
+.expand li:nth-child(11) a {
+	background-position: -89px -89px;
+}
+.expand li:nth-child(12) a {
+	background-position: -132px -89px;
+}
+.expand li a p {
+	padding-top: 30px;
+}
